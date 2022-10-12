@@ -1,19 +1,17 @@
 Singleton
-===
+=========
 
-A macro-based solution for automatic singleton management in Haxe.
+Turn classes into singletons by implementing the `Singleton` interface.
 
-Use
----
+```haxe
+class MyClass implements Singleton {
+	public var variable:Float;
+}
+```
 
-Simply implement the Singleton interface!
+Now you can access `MyClass.instance` from anywhere!
 
-    class Thing implements Singleton
-    {
-    	function new() {}
-    }
-
-Then use `instance` to grab the instance anywhere!
-   
-    Thing.instance;
+```haxe
+MyClass.instance.variable = 4;
+```
 

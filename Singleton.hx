@@ -35,7 +35,7 @@ class Singleton {
 		
 		#if display
 			addClassFields(macro class Singleton {
-				public static var instance:$typePath;
+				public static var instance:$type;
 			});
 			return fields;
 		#end
